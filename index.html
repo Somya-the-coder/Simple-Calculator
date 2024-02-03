@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="calc.css">
+    
+</head>
+ <!-- style is inline css -->
+<body style="background-color:rgb(202, 192, 203)">
+
+    <h1 style="text-align:center;">Simple Calculator</h1>
+
+
+
+    <div class="container">
+        <label>Enter First Number:</label>
+        <input type="number" id="num1">
+        <!-- a box comes by input tag no closing reqd -->
+    </div>
+    <br>
+
+
+
+    <div class="container">
+        <label>Enter Second Number:</label>
+        <input type="number" id="num2">
+    </div>
+    <br>
+
+
+
+    <div class="container">
+
+        <button class="box" onclick="selectOperation('-')">-</button>
+          <button class="box" onclick="selectOperation('*')">*</button>
+          <button class="box" onclick="selectOperation('/')">/</button>
+          <button class="box" onclick="selectOperation('%')">%</button>
+          <button class="box" onclick="selectOperation('+')">+</button>
+          <!-- <input type="text" id="operation"> -->
+    </div>
+
+
+    <div class="button-container">
+        <button onclick="calculate()">Calculate</button>
+    </div>
+
+
+    <h4 style="text-align:center;">Your Result:</h4>
+    <div class="container">
+        <div id="resultBox"></div>
+        <!-- <input class="result"></input> -->
+    </div>
+    <script src="calc.js"></script>
+</html>
+
+
+
+
+
+
